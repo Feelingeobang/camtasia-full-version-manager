@@ -1,0 +1,109 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1e2b"/>
+      <stop offset="55%" stop-color="#123246"/>
+      <stop offset="100%" stop-color="#0a1620"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4c8"/>
+      <stop offset="100%" stop-color="#00a3ff"/>
+    </linearGradient>
+    <linearGradient id="clip1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff8a3d"/>
+      <stop offset="100%" stop-color="#ff5f6d"/>
+    </linearGradient>
+    <linearGradient id="clip2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4c8"/>
+      <stop offset="100%" stop-color="#0099cc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00e0d0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00e0d0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="playBtn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#bfeeee" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- soft glow behind play button area -->
+  <circle cx="990" cy="150" r="190" fill="url(#glow)"/>
+
+  <!-- grid dots for subtle depth -->
+  <g opacity="0.12">
+    <circle cx="80" cy="60" r="2" fill="#8fe9e2"/>
+    <circle cx="140" cy="90" r="2" fill="#8fe9e2"/>
+    <circle cx="200" cy="50" r="2" fill="#8fe9e2"/>
+    <circle cx="260" cy="100" r="2" fill="#8fe9e2"/>
+    <circle cx="320" cy="60" r="2" fill="#8fe9e2"/>
+    <circle cx="1000" cy="50" r="2" fill="#8fe9e2"/>
+    <circle cx="1060" cy="80" r="2" fill="#8fe9e2"/>
+    <circle cx="1120" cy="40" r="2" fill="#8fe9e2"/>
+  </g>
+
+  <!-- Film strip / video frame decoration top -->
+  <g opacity="0.5">
+    <rect x="60" y="24" width="1080" height="10" fill="none" stroke="#00d4c8" stroke-width="1"/>
+    <rect x="72" y="20" width="10" height="18" fill="#00d4c8"/>
+    <rect x="112" y="20" width="10" height="18" fill="#00d4c8"/>
+    <rect x="152" y="20" width="10" height="18" fill="#00d4c8"/>
+    <rect x="192" y="20" width="10" height="18" fill="#00d4c8"/>
+    <rect x="1078" y="20" width="10" height="18" fill="#00d4c8"/>
+    <rect x="1038" y="20" width="10" height="18" fill="#00d4c8"/>
+    <rect x="998" y="20" width="10" height="18" fill="#00d4c8"/>
+  </g>
+
+  <!-- Play button on right -->
+  <g transform="translate(990,150)">
+    <circle r="78" fill="#0e2530" stroke="url(#accent)" stroke-width="3"/>
+    <circle r="60" fill="none" stroke="#00d4c8" stroke-width="1.5" opacity="0.4"/>
+    <polygon points="-18,-32 -18,32 38,0" fill="url(#playBtn)"/>
+  </g>
+
+  <!-- waveform decoration under play button -->
+  <g stroke="#00d4c8" stroke-width="3" stroke-linecap="round" opacity="0.55">
+    <line x1="870" y1="270" x2="870" y2="290"/>
+    <line x1="885" y1="255" x2="885" y2="300"/>
+    <line x1="900" y1="265" x2="900" y2="292"/>
+    <line x1="915" y1="248" x2="915" y2="305"/>
+    <line x1="930" y1="260" x2="930" y2="296"/>
+    <line x1="945" y1="270" x2="945" y2="286"/>
+    <line x1="960" y1="252" x2="960" y2="302"/>
+    <line x1="975" y1="262" x2="975" y2="292"/>
+    <line x1="990" y1="270" x2="990" y2="286"/>
+    <line x1="1005" y1="255" x2="1005" y2="298"/>
+    <line x1="1020" y1="264" x2="1020" y2="290"/>
+    <line x1="1035" y1="270" x2="1035" y2="284"/>
+  </g>
+
+  <!-- Timeline / editing tracks decoration bottom-left, thematic -->
+  <g>
+    <line x1="60" y1="300" x2="700" y2="300" stroke="#274a58" stroke-width="2"/>
+    <rect x="60" y="288" width="120" height="22" rx="4" fill="url(#clip1)" opacity="0.85"/>
+    <rect x="195" y="288" width="180" height="22" rx="4" fill="url(#clip2)" opacity="0.85"/>
+    <rect x="390" y="288" width="90" height="22" rx="4" fill="url(#clip1)" opacity="0.6"/>
+    <rect x="495" y="288" width="150" height="22" rx="4" fill="url(#clip2)" opacity="0.6"/>
+    <line x1="60" y1="316" x2="700" y2="316" stroke="#1c3743" stroke-width="1.5" opacity="0.7"/>
+  </g>
+
+  <!-- playhead marker -->
+  <line x1="320" y1="280" x2="320" y2="322" stroke="#ff8a3d" stroke-width="2"/>
+  <polygon points="312,278 328,278 320,290" fill="#ff8a3d"/>
+
+  <!-- Headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="60" fill="#f2fbfb">
+    <tspan x="60" dy="0" textLength="900" lengthAdjust="spacingAndGlyphs">Camtasia Full Version</tspan>
+    <tspan x="60" dy="70" textLength="380" lengthAdjust="spacingAndGlyphs">Download</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="60" y="255" font-family="'Segoe UI', Arial, sans-serif" font-weight="400" font-size="24" fill="#9fd8d4" textLength="760" lengthAdjust="spacingAndGlyphs">
+    Download pluggable full-version installer for the Camtasia ecosystem
+  </text>
+
+  <!-- accent underline -->
+  <rect x="62" y="270" width="220" height="4" rx="2" fill="url(#accent)"/>
+</svg>
